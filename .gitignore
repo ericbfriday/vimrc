@@ -1,0 +1,22 @@
+*
+#Allows git to look @ sub directories, but doesn't include them
+/*
+# Whitelist some files
+!.gitignore
+!README.md
+
+# Ignore all files named .DS_Store or ending with .log
+**/.DS_Store
+**.log
+
+!.vimrc
+!.vim
+!.vim/*.*
+!.viminfo
+
+!.config/nvim/*
+# !.config/nvim/init.vim
+
+!.config/nyaovim
+!.config/*.*
+
