@@ -13,8 +13,6 @@
 !.vim/*.*
 !.viminfo
 # Inlude NeoVim files
-!/.config/nvim/
-!/.config/nvim/*.vim
-!/.config/nvim/.gitignore
+!.config/nvim/**
 # Include NyaoVim files
-!.config/nyaovim
+!.config/nyaovim/**

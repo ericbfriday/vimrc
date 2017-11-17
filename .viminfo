@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\<config\>
+~Msle0~/\<config\>
 
 # Last Substitute Search Pattern:
 ~MSle0&SetColors all
@@ -20,10 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1510885061,,"q"
+:w
+|2,0,1510884890,,"w"
 :wq
 |2,0,1510884557,,"wq"
-:w
-|2,0,1510884548,,"w"
 :SetColor obsidian
 |2,0,1510883548,,"SetColor obsidian"
 :SetColors all
@@ -36,8 +38,6 @@ $
 |2,0,1510883359,,"SetColor GithubUniverse"
 :q!
 |2,0,1510883078,,"q!"
-:q
-|2,0,1510883068,,"q"
 :PlugInstall
 |2,0,1510883062,,"PlugInstall"
 :bNext
@@ -86,10 +86,10 @@ $
 |2,0,1510637216,,"UpdateRemotePlugins"
 
 # Search String History (newest to oldest):
+? \<config\>
+|2,1,1510884811,,"\\<config\\>"
 ? \s\+$
 |2,1,1510872333,,"\\s\\+$"
-? \<config\>
-|2,1,1510857442,,"\\<config\\>"
 ? \/\*\*
 |2,1,1510849365,,"\\/\\*\\*"
 ? thee
@@ -124,68 +124,106 @@ $
 	" end hackernoon recommended plugins.
 	
 |3,0,0,0,2,0,1510847836,"\" end hackernoon recommended plugins.",""
-"1	LINE	0
-	!.config/*.*
-|3,0,1,1,1,0,1510884376,"!.config/*.*"
+""1	LINE	0
+	!.config/nvim/.gitignore
+|3,1,1,1,1,0,1510884808,"!.config/nvim/.gitignore"
 "2	LINE	0
-	*
-|3,0,2,1,1,0,1510884311,"*"
+	!.config/nvim/*.vim
+|3,0,2,1,1,0,1510884807,"!.config/nvim/*.vim"
 "3	LINE	0
-	    3) About Mondo
-|3,0,3,1,1,0,1510867138,"    3) About Mondo"
+	!.config/*.*
+|3,0,3,1,1,0,1510884376,"!.config/*.*"
 "4	LINE	0
-	Teacher, then student, then admin.
-|3,0,4,1,1,0,1510866947,"Teacher, then student, then admin."
+	*
+|3,0,4,1,1,0,1510884311,"*"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1510866770,""
+	    3) About Mondo
+|3,0,5,1,1,0,1510867138,"    3) About Mondo"
 "6	LINE	0
-	Admin, then teacher, student.
-|3,0,6,1,1,0,1510866769,"Admin, then teacher, student."
+	Teacher, then student, then admin.
+|3,0,6,1,1,0,1510866947,"Teacher, then student, then admin."
 "7	LINE	0
-	Final:
-|3,0,7,1,1,0,1510866675,"Final:"
+	
+|3,0,7,1,1,0,1510866770,""
 "8	LINE	0
-	    Teacher - Mike.
-|3,0,8,1,1,0,1510866674,"    Teacher - Mike."
+	Admin, then teacher, student.
+|3,0,8,1,1,0,1510866769,"Admin, then teacher, student."
 "9	LINE	0
-	    Close - Emily
-|3,0,9,1,1,0,1510866674,"    Close - Emily"
-""-	CHAR	0
-	init
-|3,1,36,0,1,0,1510884431,"init"
+	Final:
+|3,0,9,1,1,0,1510866675,"Final:"
+"-	CHAR	0
+	/
+|3,0,36,0,1,0,1510884803,"/"
 
 # File marks:
-'0  18  1  ~/.gitignore
-|4,48,18,1,1510884557,"~/.gitignore"
-'1  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,49,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
-'2  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
-|4,50,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
-'3  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,51,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
-'4  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,52,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
-'5  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,53,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
-'6  31  0  ~/Prime/tier3/group-projects/Mondo-conversation-notes.txt
-|4,54,31,0,1510866485,"~/Prime/tier3/group-projects/Mondo-conversation-notes.txt"
-'7  16  0  ~/.gitignore
-|4,55,16,0,1510857728,"~/.gitignore"
-'8  17  0  ~/.gitignore
-|4,56,17,0,1510857728,"~/.gitignore"
-'9  684  34  /private/var/folders/71/yrh7tgtd2374y08b25m1ns900000gn/T/tutor5enIAb
-|4,57,684,34,1510857320,"/private/var/folders/71/yrh7tgtd2374y08b25m1ns900000gn/T/tutor5enIAb"
+'0  18  18  ~/.gitignore
+|4,48,18,18,1510885061,"~/.gitignore"
+'1  31  0  ~/.vimrc
+|4,49,31,0,1510884792,"~/.vimrc"
+'2  17  1  ~/.gitignore
+|4,50,17,1,1510884557,"~/.gitignore"
+'3  18  1  ~/.gitignore
+|4,51,18,1,1510884557,"~/.gitignore"
+'4  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,52,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+'5  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,53,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+'6  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,54,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+'7  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,55,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
+'8  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,56,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
+'9  31  0  ~/Prime/tier3/group-projects/Mondo-conversation-notes.txt
+|4,57,31,0,1510866485,"~/Prime/tier3/group-projects/Mondo-conversation-notes.txt"
 
 # Jumplist (newest first):
+-'  18  18  ~/.gitignore
+|4,39,18,18,1510885061,"~/.gitignore"
+-'  16  0  ~/.gitignore
+|4,39,16,0,1510884811,"~/.gitignore"
+-'  17  0  ~/.gitignore
+|4,39,17,0,1510884797,"~/.gitignore"
+-'  31  0  ~/.vimrc
+|4,39,31,0,1510884792,"~/.vimrc"
+-'  31  0  ~/.vimrc
+|4,39,31,0,1510884792,"~/.vimrc"
 -'  18  1  ~/.gitignore
 |4,39,18,1,1510884557,"~/.gitignore"
+-'  18  1  ~/.gitignore
+|4,39,18,1,1510884557,"~/.gitignore"
+-'  16  1  ~/.gitignore
+|4,39,16,1,1510884310,"~/.gitignore"
 -'  16  1  ~/.gitignore
 |4,39,16,1,1510884310,"~/.gitignore"
 -'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
 |4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
 -'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
 |4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
 -'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
 |4,39,61,0,1510883615,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
 -'  61  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
@@ -194,6 +232,30 @@ $
 |4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
 -'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
 |4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  1  0  ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
+|4,39,1,0,1510883604,"~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim"
+-'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
+|4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
 -'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
 |4,39,638,0,1510883568,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
 -'  638  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
@@ -246,167 +308,105 @@ $
 |4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
 -'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
 |4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  4  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,4,1510869410,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  29  39  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,29,39,1510867786,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
--'  22  6  ~/Prime/tier3/group-projects/presentation-practice.txt
-|4,39,22,6,1510867166,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
+-'  39  47  ~/Prime/tier3/group-projects/presentation-practice.txt
+|4,39,39,47,1510872333,"~/Prime/tier3/group-projects/presentation-practice.txt"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1510884552	0
-	"	18	1
-	^	18	2
-	.	18	1
+	*	1510884902	0
+	"	18	18
+	^	18	19
+	.	18	18
 	+	1	0
 	+	2	0
 	+	12	9
 	+	14	0
 	+	11	0
 	+	14	0
-	+	21	0
+	+	19	0
 	+	13	0
 	+	14	0
-	+	24	0
-	+	21	22
+	+	22	0
+	+	19	22
 	+	17	0
 	+	17	22
 	+	17	37
 	+	14	13
-	+	21	22
-	+	22	18
+	+	19	22
+	+	20	18
 	+	14	15
-	+	22	1
-	+	21	1
 	+	20	1
+	+	19	1
+	+	18	1
 	+	17	1
 	+	16	1
 	+	14	1
@@ -417,11 +417,11 @@ $
 	+	12	0
 	+	10	5
 	+	14	12
-	+	22	16
-	+	23	11
+	+	20	16
+	+	21	11
 	+	16	19
 	+	17	1
-	+	24	0
+	+	22	0
 	+	16	1
 	+	15	16
 	+	16	21
@@ -429,13 +429,57 @@ $
 	+	1	0
 	+	10	19
 	+	15	20
-	+	19	22
-	+	21	0
+	+	17	22
+	+	19	0
 	+	16	14
 	+	17	14
-	+	18	23
+	+	17	23
 	+	17	1
-	+	18	1
+	+	16	1
+	+	17	1
+	+	17	0
+	+	16	15
+	+	18	18
+
+> ~/.vimrc
+	*	1510884788	0
+	"	31	0
+	^	31	31
+	.	31	5
+	+	446	10
+	+	32	14
+	+	15	41
+	+	21	0
+	+	20	0
+	+	21	0
+	+	19	97
+	+	26	0
+	+	28	0
+	+	30	36
+	+	48	47
+	+	8	14
+	+	9	29
+	+	46	0
+	+	45	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	41	0
+	+	40	1
+	+	39	0
+	+	38	1
+	+	37	0
+	+	36	1
+	+	34	49
+	+	26	0
+	+	32	0
+	+	26	0
+	+	32	0
+	+	24	0
+	+	32	42
+	+	40	0
+	+	33	0
+	+	31	5
 
 > ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
 	*	1510883611	0
@@ -486,46 +530,6 @@ $
 > /private/var/folders/71/yrh7tgtd2374y08b25m1ns900000gn/T/tutor5enIAb
 	*	1510851556	0
 	"	684	34
-
-> ~/.vimrc
-	*	1510851442	0
-	"	31	5
-	^	31	31
-	.	31	5
-	+	446	10
-	+	32	14
-	+	15	41
-	+	21	0
-	+	20	0
-	+	21	0
-	+	19	97
-	+	26	0
-	+	28	0
-	+	30	36
-	+	48	47
-	+	8	14
-	+	9	29
-	+	46	0
-	+	45	0
-	+	44	0
-	+	43	0
-	+	42	0
-	+	41	0
-	+	40	1
-	+	39	0
-	+	38	1
-	+	37	0
-	+	36	1
-	+	34	49
-	+	26	0
-	+	32	0
-	+	26	0
-	+	32	0
-	+	24	0
-	+	32	42
-	+	40	0
-	+	33	0
-	+	31	5
 
 > ~/ControlP
 	*	1510823139	0
