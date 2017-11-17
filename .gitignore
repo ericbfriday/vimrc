@@ -16,3 +16,7 @@
 !.config/nvim/**
 # Include NyaoVim files
 !.config/nyaovim/**
+
+# Additional .DS_Store ignores
+.config/nvim/.DS_Store
+.config/nvim/bundle/.DS_Store
