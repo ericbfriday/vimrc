@@ -4,22 +4,34 @@ autocmd FileType javascript set formatprg=prettier\ --stdin
 autocmd BufWritePre *.js :normal gggqG
 autocmd BufWritePre *.js exe "normal! gggqG\<C-o>\<C-o>"
 let g:ale_fixers = {'javascript': ['eslint']}
+let $PYTHONHOME = 'C:\Users\bxn4\AppData\Local\Programs\Python\Python35\'
+let g:python3_host_prog = 'C:\Users\bxn4\AppData\Local\Programs\Python\Python35\python.exe'
 nmap <leader>d <Plug>(ale_fix)
 
-call plug#begin('C:/Program Files(x86)/Vim/Vim80/plugged')
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+call plug#begin('C:/Program Files (x86)/Vim/Vim80/plugged')
+
+" Tree-styled file explorer:
+Plug 'scrooloose/nerdtree'
+
 Plug 'junegunn/vim-easy-align'
 
 " Plugin for vim colors & color management
 Plug 'flazz/vim-colorschemes'
+" Plug 'yosiat/oceanic-next-vim'
 
-" Plugin recommendations from below article are inserted here: 
+" Plugin recommendations from below article are inserted here:
 " https://hackernoon.com/5-vim-plugins-i-cant-live-without-for-javascript-development-f7e98f98e8d5
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'chrisbra/NrrwRgn'
-Plug 'https://github.com/wesQ3/vim-windowswap'
+" Plug 'chrisbra/NrrwRgn'
+" Plug 'https://github.com/wesQ3/vim-windowswap'
 Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 Plug 'wokalski/autocomplete-flow'
 " end hackernoon recommended plugins.
 
@@ -29,6 +41,9 @@ Plug '907th/vim-auto-save'
 Plug 'christoomey/vim-system-copy'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
+" Plug 'bagrat/vim-workspace'
 " call plug#end() ends Plug script reading.
 call plug#end()
 
@@ -39,28 +54,28 @@ let g:auto_save_write_all_buffers = 1
 
 " EXAMPLE ESLint CONFIG FILE BELOW FOR ALE/ESLint.
 " {
-"  “extends”: [
-"    “eslint:recommended”,
-"    “prettier”
+"  ï¿½extendsï¿½: [
+"    ï¿½eslint:recommendedï¿½,
+"    ï¿½prettierï¿½
 "  ],
-"  “plugins”: [
-"    “prettier”
+"  ï¿½pluginsï¿½: [
+"    ï¿½prettierï¿½
 "  ],
-"  “rules”: {
-"    “prettier/prettier”: “error”
+"  ï¿½rulesï¿½: {
+"    ï¿½prettier/prettierï¿½: ï¿½errorï¿½
 "  }
 "}
 
 "Begin vimrcs 'Basic' vim recommendations below
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
+" Maintainer:
 "       Amir Salihefendic
 "       http://amix.dk - amix@amix.dk
 "
-" Version: 
-"       6.0 - 01/04/17 14:24:34 
+" Version:
+"       6.0 - 01/04/17 14:24:34
 "
-" Blog_post: 
+" Blog_post:
 "       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
 "
 " Awesome_version:
@@ -73,7 +88,7 @@ let g:auto_save_write_all_buffers = 1
 " Syntax_highlighted:
 "       http://amix.dk/vim/vimrc.html
 "
-" Raw_version: 
+" Raw_version:
 "       http://amix.dk/vim/vimrc.txt
 "
 " Sections:
@@ -115,7 +130,7 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" :W sudo saves the file 
+" :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
@@ -126,8 +141,12 @@ command W w !sudo tee % > /dev/null
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
+" Set starting width to 360 and height to 60
+set co=175
+set lines=60
+
 " Avoid garbled characters in Chinese language windows OS
-let $LANG='en' 
+let $LANG='en'
 set langmenu=en
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
@@ -159,23 +178,23 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
 set hlsearch
 
 " Makes search act like search in modern browsers
-set incsearch 
+set incsearch
 
 " Don't redraw while executing macros (good performance config)
-set lazyredraw 
+set lazyredraw
 
 " For regular expressions turn magic on
 set magic
 
 " Show matching brackets when text indicator is over them
-set showmatch 
+set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -199,7 +218,7 @@ set foldcolumn=1
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
-syntax enable 
+syntax enable
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
@@ -207,9 +226,16 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    set guifont=Hack NF
 catch
 endtry
+
+try
+    colorscheme OceanicNextEBF
+catch
+endtry
+
+let g:airline_theme='deus'
 
 set background=dark
 
@@ -222,7 +248,7 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+set encoding=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
@@ -297,8 +323,8 @@ map <leader>h :bprevious<cr>
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove 
-map <leader>t<leader> :tabnext 
+map <leader>tm :tabmove
+map <leader>t<leader> :tabnext
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
@@ -313,7 +339,7 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
   set stal=2
@@ -432,7 +458,7 @@ function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str
     emenu Foo.Bar
     unmenu Foo
-endfunction 
+endfunction
 
 function! VisualSelection(direction, extra_filter) range
     let l:saved_reg = @"
@@ -450,4 +476,3 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
