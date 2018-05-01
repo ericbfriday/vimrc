@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<config\>
+~MSle0~/tn
 
 # Last Substitute Search Pattern:
 ~MSle0&SetColors all
@@ -20,14 +20,40 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1518361332,,"wq"
 :q
-|2,0,1510885917,,"q"
+|2,0,1518361226,,"q"
 :w
-|2,0,1510885781,,"w"
+|2,0,1518361009,,"w"
+:qa!
+|2,0,1513858837,,"qa!"
+:x
+|2,0,1511328332,,"x"
+:w test-vimtutor.txt
+|2,0,1511320959,,"w test-vimtutor.txt"
+:echo mapleader
+|2,0,1510894443,,"echo mapleader"
+:colorscheme obsidian
+|2,0,1510894079,,"colorscheme obsidian"
+:colorscheme
+|2,0,1510894074,,"colorscheme"
+:colorscheme obsidian2
+|2,0,1510894069,,"colorscheme obsidian2"
+:SetColor all
+|2,0,1510893574,,"SetColor all"
+:tab sp
+|2,0,1510886725,,"tab sp"
+:ALEFix
+|2,0,1510886645,,"ALEFix"
+:ALELint
+|2,0,1510886636,,"ALELint"
+:bunload
+|2,0,1510886607,,"bunload"
+:Bclose
+|2,0,1510886373,,"Bclose"
 :term
 |2,0,1510885298,,"term"
-:wq
-|2,0,1510885077,,"wq"
 :SetColor obsidian
 |2,0,1510883548,,"SetColor obsidian"
 :SetColors all
@@ -64,8 +90,6 @@ $
 |2,0,1510822007,,"!"
 :'<,'>!
 |2,0,1510822002,,"'<,'>!"
-:Bclose
-|2,0,1510822665,,"Bclose"
 :CtrlP
 |2,0,1510822423,,"CtrlP"
 :set guifont=Hack
@@ -88,10 +112,16 @@ $
 |2,0,1510637216,,"UpdateRemotePlugins"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1518360663,,"@$"
+? \s\+$
+|2,1,1511818806,,"\\s\\+$"
+?/tn
+|2,1,1510894323,47,"tn"
+?/color
+|2,1,1510894124,47,"color"
 ? \<config\>
 |2,1,1510884811,,"\\<config\\>"
-? \s\+$
-|2,1,1510872333,,"\\s\\+$"
 ? \/\*\*
 |2,1,1510849365,,"\\/\\*\\*"
 ? thee
@@ -122,342 +152,296 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
+"0	LINE	0
 	" end hackernoon recommended plugins.
-	
-|3,0,0,0,2,0,1510847836,"\" end hackernoon recommended plugins.",""
+|3,0,0,1,1,0,1518360663,"\" end hackernoon recommended plugins."
 ""1	LINE	0
+	        "process": true,
+|3,1,1,1,1,0,1518361007,"        \"process\": true,"
+"2	LINE	0
+	        }
+|3,0,2,1,1,0,1518360981,"        }"
+"3	LINE	0
+	### test message
+|3,0,3,1,1,0,1510958852,"### test message"
+"4	LINE	0
+	
+|3,0,4,1,1,0,1510958561,""
+"5	LINE	0
+	.config/nvim/.DS_Store
+|3,0,5,1,1,0,1510885927,".config/nvim/.DS_Store"
+"6	LINE	0
 	.vim_old_file_storage/
 	.vscode/
 	Desktop/
 	Library/
 	Prime/
 	Programming/
-|3,1,1,1,6,0,1510885732,".vim_old_file_storage/",".vscode/","Desktop/","Library/","Prime/","Programming/"
-"2	LINE	0
-	.local/
-|3,0,2,1,1,0,1510885731,".local/"
-"3	LINE	0
-	.cache/
-|3,0,3,1,1,0,1510885730,".cache/"
-"4	LINE	0
-	.atom/
-|3,0,4,1,1,0,1510885730,".atom/"
-"5	LINE	0
-	
-|3,0,5,1,1,0,1510885730,""
-"6	LINE	0
-	!.config/nyaovim/
-|3,0,6,1,1,0,1510885729,"!.config/nyaovim/"
+|3,0,6,1,6,0,1510885732,".vim_old_file_storage/",".vscode/","Desktop/","Library/","Prime/","Programming/"
 "7	LINE	0
-	# Include NyaoVim files
-|3,0,7,1,1,0,1510885728,"# Include NyaoVim files"
+	.local/
+|3,0,7,1,1,0,1510885731,".local/"
 "8	LINE	0
-	!.config/nvim/*.*
-|3,0,8,1,1,0,1510885728,"!.config/nvim/*.*"
+	.cache/
+|3,0,8,1,1,0,1510885730,".cache/"
 "9	LINE	0
-	!.config/nvim/
-|3,0,9,1,1,0,1510885727,"!.config/nvim/"
+	.atom/
+|3,0,9,1,1,0,1510885730,".atom/"
 "-	CHAR	0
-	*
-|3,0,36,0,1,0,1510885354,"*"
+	desert
+|3,0,36,0,1,0,1510894147,"desert"
 
 # File marks:
-'0  2  0  ~/.gitignore
-|4,48,2,0,1510885917,"~/.gitignore"
-'1  2  0  ~/.gitignore
-|4,49,2,0,1510885864,"~/.gitignore"
-'2  1  0  ~/.git/COMMIT_EDITMSG
-|4,50,1,0,1510885077,"~/.git/COMMIT_EDITMSG"
-'3  19  18  ~/.gitignore
-|4,51,19,18,1510885061,"~/.gitignore"
-'4  18  18  ~/.gitignore
-|4,52,18,18,1510885061,"~/.gitignore"
-'5  19  18  ~/.gitignore
-|4,53,19,18,1510885061,"~/.gitignore"
-'6  18  18  ~/.gitignore
-|4,54,18,18,1510885061,"~/.gitignore"
-'7  31  0  ~/.vimrc
-|4,55,31,0,1510884792,"~/.vimrc"
-'8  19  1  ~/.gitignore
-|4,56,19,1,1510884557,"~/.gitignore"
-'9  19  1  ~/.gitignore
-|4,57,19,1,1510884557,"~/.gitignore"
+'0  1  0  ~/.git/MERGE_MSG
+|4,48,1,0,1518361332,"~/.git/MERGE_MSG"
+'1  24  20  ~/Programming/personal-portfolio/app.js
+|4,49,24,20,1518361226,"~/Programming/personal-portfolio/app.js"
+'2  37  8  ~/Programming/.jshintrc
+|4,50,37,8,1518361101,"~/Programming/.jshintrc"
+'3  55  22  ~/.vimrc
+|4,51,55,22,1518357346,"~/.vimrc"
+'4  265  0  ~/Programming/personal-portfolio-express/.git/COMMIT_EDITMSG
+|4,52,265,0,1513858837,"~/Programming/personal-portfolio-express/.git/COMMIT_EDITMSG"
+'5  5  35  ~/Prime/tier3/group-projects/MusicNerdz/node_modules/sshpk/lib/fingerprint.js
+|4,53,5,35,1512157111,"~/Prime/tier3/group-projects/MusicNerdz/node_modules/sshpk/lib/fingerprint.js"
+'6  1  0  ~/Prime/tier3/week7/paul-time-tuesday-job-hunt.md
+|4,54,1,0,1511896873,"~/Prime/tier3/week7/paul-time-tuesday-job-hunt.md"
+'7  11  89  ~/Desktop/start-postgreSQL.txt
+|4,55,11,89,1511818806,"~/Desktop/start-postgreSQL.txt"
+'8  1  0  ~/.vimgolf/put/56fb2e75ccffcc0009026473.output.txt
+|4,56,1,0,1511328427,"~/.vimgolf/put/56fb2e75ccffcc0009026473.output.txt"
+'9  1  0  ~/.vimgolf/put/56fb2e75ccffcc0009026473.output.txt
+|4,57,1,0,1511328332,"~/.vimgolf/put/56fb2e75ccffcc0009026473.output.txt"
 
 # Jumplist (newest first):
--'  2  0  ~/.gitignore
-|4,39,2,0,1510885917,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1510885864,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1510885833,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1510885833,"~/.gitignore"
--'  16  14  ~/.gitignore
-|4,39,16,14,1510885832,"~/.gitignore"
--'  16  14  ~/.gitignore
-|4,39,16,14,1510885832,"~/.gitignore"
--'  18  17  ~/.gitignore
-|4,39,18,17,1510885831,"~/.gitignore"
--'  18  17  ~/.gitignore
-|4,39,18,17,1510885831,"~/.gitignore"
--'  14  0  ~/.gitignore
-|4,39,14,0,1510885772,"~/.gitignore"
--'  14  0  ~/.gitignore
-|4,39,14,0,1510885772,"~/.gitignore"
--'  15  0  ~/.gitignore
-|4,39,15,0,1510885770,"~/.gitignore"
--'  15  0  ~/.gitignore
-|4,39,15,0,1510885770,"~/.gitignore"
--'  17  0  ~/.gitignore
-|4,39,17,0,1510885769,"~/.gitignore"
--'  17  0  ~/.gitignore
-|4,39,17,0,1510885769,"~/.gitignore"
--'  19  0  ~/.gitignore
-|4,39,19,0,1510885768,"~/.gitignore"
--'  19  0  ~/.gitignore
-|4,39,19,0,1510885768,"~/.gitignore"
--'  13  0  ~/.gitignore
-|4,39,13,0,1510885763,"~/.gitignore"
--'  13  0  ~/.gitignore
-|4,39,13,0,1510885763,"~/.gitignore"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1510885077,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1510885077,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1510885077,"~/.git/COMMIT_EDITMSG"
--'  1  0  ~/.git/COMMIT_EDITMSG
-|4,39,1,0,1510885077,"~/.git/COMMIT_EDITMSG"
--'  18  18  ~/.gitignore
-|4,39,18,18,1510885061,"~/.gitignore"
--'  18  18  ~/.gitignore
-|4,39,18,18,1510885061,"~/.gitignore"
--'  16  0  ~/.gitignore
-|4,39,16,0,1510884811,"~/.gitignore"
--'  16  0  ~/.gitignore
-|4,39,16,0,1510884811,"~/.gitignore"
--'  17  0  ~/.gitignore
-|4,39,17,0,1510884797,"~/.gitignore"
--'  17  0  ~/.gitignore
-|4,39,17,0,1510884797,"~/.gitignore"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  31  0  ~/.vimrc
-|4,39,31,0,1510884792,"~/.vimrc"
--'  18  1  ~/.gitignore
-|4,39,18,1,1510884557,"~/.gitignore"
--'  18  1  ~/.gitignore
-|4,39,18,1,1510884557,"~/.gitignore"
--'  18  1  ~/.gitignore
-|4,39,18,1,1510884557,"~/.gitignore"
--'  18  1  ~/.gitignore
-|4,39,18,1,1510884557,"~/.gitignore"
--'  16  1  ~/.gitignore
-|4,39,16,1,1510884310,"~/.gitignore"
--'  16  1  ~/.gitignore
-|4,39,16,1,1510884310,"~/.gitignore"
--'  16  1  ~/.gitignore
-|4,39,16,1,1510884310,"~/.gitignore"
--'  16  1  ~/.gitignore
-|4,39,16,1,1510884310,"~/.gitignore"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
--'  1  0  ~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme
-|4,39,1,0,1510883981,"~/.vscode/extensions/gerane.theme-oblivion-0.0.2/themes/Oblivion.tmTheme"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1518361332,"~/.git/MERGE_MSG"
+-'  24  20  ~/Programming/personal-portfolio/app.js
+|4,39,24,20,1518361226,"~/Programming/personal-portfolio/app.js"
+-'  24  20  ~/Programming/personal-portfolio/app.js
+|4,39,24,20,1518361226,"~/Programming/personal-portfolio/app.js"
+-'  1  0  ~/Programming/personal-portfolio/app.js
+|4,39,1,0,1518361172,"~/Programming/personal-portfolio/app.js"
+-'  1  0  ~/Programming/personal-portfolio/app.js
+|4,39,1,0,1518361172,"~/Programming/personal-portfolio/app.js"
+-'  37  8  ~/Programming/.jshintrc
+|4,39,37,8,1518361101,"~/Programming/.jshintrc"
+-'  37  8  ~/Programming/.jshintrc
+|4,39,37,8,1518361101,"~/Programming/.jshintrc"
+-'  37  8  ~/Programming/.jshintrc
+|4,39,37,8,1518361101,"~/Programming/.jshintrc"
+-'  37  8  ~/Programming/.jshintrc
+|4,39,37,8,1518361101,"~/Programming/.jshintrc"
+-'  1  0  ~/Programming/.jshintrc
+|4,39,1,0,1518360720,"~/Programming/.jshintrc"
+-'  1  0  ~/Programming/.jshintrc
+|4,39,1,0,1518360720,"~/Programming/.jshintrc"
+-'  1  0  ~/Programming/.jshintrc
+|4,39,1,0,1518360720,"~/Programming/.jshintrc"
+-'  1  0  ~/Programming/.jshintrc
+|4,39,1,0,1518360720,"~/Programming/.jshintrc"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  1  0  ~/Programming
+|4,39,1,0,1518360663,"~/Programming"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  55  22  ~/.vimrc
+|4,39,55,22,1518357346,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  471  0  ~/.vimrc
+|4,39,471,0,1518357099,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
+-'  401  0  ~/.vimrc
+|4,39,401,0,1518357098,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	*	1510885868	0
-	"	2	0
-	.	2	0
-	+	1	0
-	+	3	0
-	+	12	9
-	+	19	0
-	+	11	0
-	+	19	0
-	+	13	0
-	+	19	0
-	+	19	22
-	+	19	0
-	+	19	22
-	+	19	37
-	+	19	13
-	+	19	22
-	+	19	18
-	+	19	15
-	+	19	1
-	+	12	1
-	+	11	1
-	+	9	0
-	+	11	9
-	+	12	0
-	+	10	5
-	+	19	12
-	+	19	16
-	+	19	11
-	+	19	19
-	+	19	1
-	+	19	0
-	+	19	1
-	+	19	16
-	+	19	21
-	+	19	1
-	+	1	0
-	+	10	19
-	+	19	20
-	+	19	22
-	+	19	0
-	+	19	14
-	+	19	23
-	+	19	1
-	+	19	0
-	+	19	15
-	+	19	18
-	+	3	0
-	+	1	0
-	+	3	2
-	+	19	13
-	+	19	16
-	+	19	11
-	+	19	16
-	+	19	0
-	+	1	32
-	+	19	0
-	+	2	0
-
-> ~/.git/COMMIT_EDITMSG
-	*	1510885071	0
+> ~/.git/MERGE_MSG
+	*	1518361324	0
 	"	1	0
 
+> ~/Programming/personal-portfolio/app.js
+	*	1518361195	0
+	"	24	20
+	^	24	21
+
+> ~/Programming/.jshintrc
+	*	1518361013	0
+	"	37	8
+	^	40	5
+	.	37	0
+	+	1	1
+	+	38	20
+	+	40	4
+	+	37	0
+
 > ~/.vimrc
-	*	1510884788	0
-	"	31	0
-	^	31	31
-	.	31	5
-	+	446	10
+	*	1518357343	0
+	"	55	22
+	^	55	23
+	.	55	22
+	+	458	10
 	+	32	14
 	+	15	41
 	+	21	0
@@ -467,20 +451,20 @@ $
 	+	26	0
 	+	28	0
 	+	30	36
-	+	48	47
+	+	60	47
 	+	8	14
 	+	9	29
-	+	46	0
-	+	45	0
+	+	58	0
+	+	57	0
+	+	56	0
 	+	44	0
 	+	43	0
 	+	42	0
-	+	41	0
-	+	40	1
-	+	39	0
-	+	38	1
-	+	37	0
-	+	36	1
+	+	41	1
+	+	40	0
+	+	39	1
+	+	38	0
+	+	37	1
 	+	34	49
 	+	26	0
 	+	32	0
@@ -488,9 +472,186 @@ $
 	+	32	0
 	+	24	0
 	+	32	42
-	+	40	0
+	+	41	0
 	+	33	0
-	+	31	5
+	+	31	0
+	+	222	15
+	+	223	0
+	+	222	23
+	+	36	30
+	+	56	1
+	+	57	1
+	+	50	4
+	+	55	22
+
+> ~/Programming/personal-portfolio-express/.git/COMMIT_EDITMSG
+	*	1513858831	0
+	"	265	0
+
+> ~/Prime/tier3/group-projects/MusicNerdz/node_modules/sshpk/lib/fingerprint.js
+	*	1512157109	0
+	"	5	35
+
+> ~/Prime/tier3/week7/paul-time-tuesday-job-hunt.md
+	*	1511896870	0
+	"	1	0
+
+> ~/Desktop/start-postgreSQL.txt
+	*	1511818804	0
+	"	11	89
+	^	11	90
+	.	11	89
+	+	11	89
+
+> ~/.vimgolf/put/56fb2e75ccffcc0009026473.output.txt
+	*	1511328426	0
+	"	1	0
+
+> /private/var/folders/71/yrh7tgtd2374y08b25m1ns900000gn/T/vimgolf20171121-23735-1o5t0oj.txt
+	*	1511328423	0
+	"	1	0
+
+> ~/.vimgolf/put/5a0c38cd2e62f404f000001b.output.txt
+	*	1511328018	0
+	"	2	0
+
+> /private/var/folders/71/yrh7tgtd2374y08b25m1ns900000gn/T/vimgolf20171121-23659-j4hygr.txt
+	*	1511328013	0
+	"	1	0
+
+> /private/var/folders/71/yrh7tgtd2374y08b25m1ns900000gn/T/tutor3HU1va
+	*	1511320959	0
+	"	7	5
+
+> ~/Prime/tier3/week5/career-day-notes.md
+	*	1510959314	0
+	"	60	0
+	^	60	0
+	.	59	39
+	+	10	80
+	+	3	103
+	+	24	0
+	+	20	69
+	+	29	65
+	+	24	1
+	+	22	0
+	+	6	0
+	+	30	0
+	+	35	74
+	+	42	44
+	+	42	0
+	+	40	0
+	+	42	0
+	+	46	49
+	+	47	1
+	+	46	1
+	+	45	1
+	+	48	83
+	+	49	95
+	+	50	34
+	+	51	41
+	+	59	39
+
+> ~/Prime/tier3/week5/career-day-notes.txt
+	*	1510956511	0
+	"	1	0
+
+> ~/Prime/tier3/group-projects/MusicNerdz/server/public/scripts/services/moduleCreation.service.js
+	*	1510893842	0
+	"	1	0
+
+> ~/.vim/plugged/vim-colorschemes/colors/256_noir.vim
+	*	1510893511	0
+	"	1	0
+
+> ~/Prime/tier3/group-projects/MusicNerdz/server/public/scripts/controllers/adminView.controller.js
+	*	1510888854	0
+	"	5	15
+	^	5	16
+	.	1	0
+	+	1	0
+
+> ~/Prime/tier3/group-projects/MusicNerdz/server/public/scripts/services/student.service.js
+	*	1510887409	0
+	"	49	12
+
+> ~/Prime/tier2/week6/weekend/Weekend-6-Portfolio/server/app.js
+	*	1510887221	0
+	"	1	29
+	^	6	30
+	.	1	0
+	+	1	0
+
+> ~/Prime/tier3/group-projects/MusicNerdz/server/public/views/templates/adminLandingPage.html
+	*	1510887155	0
+	"	19	0
+
+> ~/.gitignore
+	*	1510886619	0
+	"	20	29
+	^	20	30
+	.	20	29
+	+	1	0
+	+	3	0
+	+	12	9
+	+	21	0
+	+	11	0
+	+	21	0
+	+	13	0
+	+	21	0
+	+	21	22
+	+	21	0
+	+	21	22
+	+	21	37
+	+	21	13
+	+	21	22
+	+	21	18
+	+	21	15
+	+	21	1
+	+	12	1
+	+	11	1
+	+	9	0
+	+	11	9
+	+	12	0
+	+	10	5
+	+	21	12
+	+	21	16
+	+	21	11
+	+	21	19
+	+	21	1
+	+	21	0
+	+	21	1
+	+	21	16
+	+	21	21
+	+	21	1
+	+	1	0
+	+	10	19
+	+	21	20
+	+	21	22
+	+	21	0
+	+	21	14
+	+	21	23
+	+	21	1
+	+	21	0
+	+	21	15
+	+	21	18
+	+	3	0
+	+	1	0
+	+	3	2
+	+	21	13
+	+	21	16
+	+	21	11
+	+	21	16
+	+	21	0
+	+	1	32
+	+	21	0
+	+	2	0
+	+	23	0
+	+	20	29
+
+> ~/.git/COMMIT_EDITMSG
+	*	1510885071	0
+	"	1	0
 
 > ~/.vim/plugged/vim-colorschemes/colors/nightshimmer.vim
 	*	1510883611	0

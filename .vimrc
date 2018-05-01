@@ -1,5 +1,9 @@
 set number
 set relativenumber
+set nrformats=
+set ic
+set hls
+set is
 autocmd FileType javascript set formatprg=prettier\ --stdin
 autocmd BufWritePre *.js :normal gggqG
 autocmd BufWritePre *.js exe "normal! gggqG\<C-o>\<C-o>"
@@ -29,6 +33,7 @@ Plug '907th/vim-auto-save'
 Plug 'christoomey/vim-system-copy'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'mhartington/oceanic-next'
 " call plug#end() ends Plug script reading.
 call plug#end()
 
@@ -36,6 +41,20 @@ call plug#end()
 let g:auto_save = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged"]
 let g:auto_save_write_all_buffers = 1
+
+"Theme
+"syntax enable
+" for vim 8 related to oceanic-next:
+if (has("termguicolors"))
+    set termguicolors
+endif
+" additional colorscheme settings for oceanic-next:
+syntax on
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
+" colorscheme obsidian
+" colo obsidian
 
 " EXAMPLE ESLint CONFIG FILE BELOW FOR ALE/ESLint.
 " {
@@ -207,7 +226,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme obsidian
 catch
 endtry
 
