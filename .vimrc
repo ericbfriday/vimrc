@@ -1,117 +1,17 @@
-set number
-set relativenumber
-set nrformats=
-set ic
-set hls
-set is
-autocmd FileType javascript set formatprg=prettier\ --stdin
-autocmd BufWritePre *.js :normal gggqG
-autocmd BufWritePre *.js exe "normal! gggqG\<C-o>\<C-o>"
-let g:ale_fixers = {'javascript': ['eslint']}
-nmap <leader>d <Plug>(ale_fix)
-
 call plug#begin('~/.vim/plugged')
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
-
-" Plugin for vim colors & color management
-Plug 'flazz/vim-colorschemes'
-
-" Plugin recommendations from below article are inserted here: 
-" https://hackernoon.com/5-vim-plugins-i-cant-live-without-for-javascript-development-f7e98f98e8d5
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-Plug 'chrisbra/NrrwRgn'
-Plug 'https://github.com/wesQ3/vim-windowswap'
-Plug 'w0rp/ale'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'wokalski/autocomplete-flow'
-" end hackernoon recommended plugins.
-
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
-Plug '907th/vim-auto-save'
-Plug 'christoomey/vim-system-copy'
-Plug 'kien/ctrlp.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'mhartington/oceanic-next'
-" call plug#end() ends Plug script reading.
+	Plug 'https://github.com/junegunn/vim-easy-align'
+	Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+	Plug '907th/vim-auto-save'
+	Plug 'flazz/vim-colorschemes'
+	Plug 'w0rp/ale'
+	Plug 'christoomey/vim-system-copy'
+	Plug 'kien/ctrlp.vim'
+	Plug 'vim-airline/vim-airline'
 call plug#end()
 
-" vim-auto-save setting below
-let g:auto_save = 1
+let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_events = ["InsertLeave", "TextChanged"]
 let g:auto_save_write_all_buffers = 1
-
-"Theme
-"syntax enable
-" for vim 8 related to oceanic-next:
-if (has("termguicolors"))
-    set termguicolors
-endif
-" additional colorscheme settings for oceanic-next:
-syntax on
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
-" colorscheme obsidian
-" colo obsidian
-
-" EXAMPLE ESLint CONFIG FILE BELOW FOR ALE/ESLint.
-" {
-"  “extends”: [
-"    “eslint:recommended”,
-"    “prettier”
-"  ],
-"  “plugins”: [
-"    “prettier”
-"  ],
-"  “rules”: {
-"    “prettier/prettier”: “error”
-"  }
-"}
-
-"Begin vimrcs 'Basic' vim recommendations below
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
-"       Amir Salihefendic
-"       http://amix.dk - amix@amix.dk
-"
-" Version: 
-"       6.0 - 01/04/17 14:24:34 
-"
-" Blog_post: 
-"       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
-"
-" Awesome_version:
-"       Get this config, nice color schemes and lots of plugins!
-"
-"       Install the awesome version from:
-"
-"           https://github.com/amix/vimrc
-"
-" Syntax_highlighted:
-"       http://amix.dk/vim/vimrc.html
-"
-" Raw_version: 
-"       http://amix.dk/vim/vimrc.txt
-"
-" Sections:
-"    -> General
-"    -> VIM user interface
-"    -> Colors and Fonts
-"    -> Files and backups
-"    -> Text, tab and indent related
-"    -> Visual mode related
-"    -> Moving around, tabs and buffers
-"    -> Status line
-"    -> Editing mappings
-"    -> vimgrep searching and cope displaying
-"    -> Spell checking
-"    -> Misc
-"    -> Helper functions
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -226,7 +126,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme obsidian
+    colorscheme desert
 catch
 endtry
 
@@ -469,3 +369,4 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
